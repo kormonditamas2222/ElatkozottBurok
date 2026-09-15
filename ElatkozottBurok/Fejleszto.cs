@@ -36,7 +36,7 @@ namespace ElatkozottBurok
                 {
                     koffeinSzint = 0;
                 }
-                else if (value > 100)
+                else if (value >= 100)
                 {
                     koffeinSzint = 100;
                     kiegve = true;
@@ -54,7 +54,7 @@ namespace ElatkozottBurok
                 {
                     stresszSzint = 0;
                 }
-                else if (value > 100)
+                else if (value >= 100)
                 {
                     stresszSzint = 100;
                     kiegve = true;

@@ -17,13 +17,18 @@ namespace ElatkozottBurok
             this.elakadva = elakadva;
         }
 
+        public Automata()
+        {
+            Keszlet = new List<Nassolnivalo>();
+        }
+
         public int KeszpenzKassza { get => keszpenzKassza; set => keszpenzKassza = value; }
         public List<Nassolnivalo> Keszlet { get => keszlet; set => keszlet = value; }
         public bool Elakadva { get => elakadva; set => elakadva = value; }
 
         public void Feltolt(List<Nassolnivalo> ujElemek)
         {
-            if (ujElemek != null || ujElemek.Count > 0)
+            if (ujElemek != null)
             {
                 Keszlet.AddRange(ujElemek);
             }          

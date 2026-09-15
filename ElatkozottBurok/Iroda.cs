@@ -9,6 +9,10 @@ namespace ElatkozottBurok
         List<Fejleszto> fejlesztok;
         Automata automataGep;
 
+        public Iroda()
+        {
+        }
+
         public Iroda(List<Fejleszto> fejlesztok, Automata automataGep)
         {
             this.fejlesztok = fejlesztok;
