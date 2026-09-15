@@ -65,7 +65,7 @@ namespace ElatkozottBurok
                 }
             } 
         }
-        private bool Kiegve { get => kiegve; }
+        public bool Kiegve { get => kiegve; }
         public string KedvencSnack { get => kedvencSnack; set => kedvencSnack = value; }
         public Fejleszto(string nev, Munkakor munkakor, int penz, int koffeinSzint, int stresszSzint, string kedvencSnack)
         {
